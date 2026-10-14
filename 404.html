@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Page not found</title>
+<script>
+  var m = window.location.pathname.match(/^\/ibger(\/.*)?$/);
+  if (m) {
+    var rest = (m[1] || "/").replace(/^\//, "");
+    window.location.replace("https://docs.ropensci.org/ibger/" + rest + window.location.search + window.location.hash);
+  }
+</script>
+</head>
+<body>
+<p>Page not found. The ibger documentation moved to
+<a href="https://docs.ropensci.org/ibger/">https://docs.ropensci.org/ibger/</a>.</p>
+</body>
+</html>
